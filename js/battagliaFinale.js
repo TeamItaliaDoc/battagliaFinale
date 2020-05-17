@@ -7,7 +7,7 @@ matchs[12] = {"episodio":1, "girone":2, "nome":"battaglia-finale-episodio-1-grup
 matchs[13] = {"episodio":1, "girone":3, "nome":"battaglia-finale-episodio-1-gruppo-3", "daCaricare":true, "stampaPosizione" : 0};
 matchs[14] = {"episodio":1, "girone":4, "nome":"battaglia-finale-episodio-1-gruppo-4", "daCaricare":true, "stampaPosizione" : 0};
 matchs[15] = {"episodio":1, "girone":5, "nome":"battaglia-finale-episodio-1-gruppo-5", "daCaricare":true, "stampaPosizione" : 0};
-/*matchs[21] = {"episodio":1, "girone":1, "nome":"battaglia-finale-episodio-2-gruppo-1", "daCaricare":true, "stampaPosizione" : 0};
+matchs[21] = {"episodio":1, "girone":1, "nome":"battaglia-finale-episodio-2-gruppo-1", "daCaricare":true, "stampaPosizione" : 0};
 matchs[22] = {"episodio":1, "girone":2, "nome":"battaglia-finale-episodio-2-gruppo-2", "daCaricare":true, "stampaPosizione" : 0};
 matchs[23] = {"episodio":1, "girone":3, "nome":"battaglia-finale-episodio-2-gruppo-3", "daCaricare":true, "stampaPosizione" : 0};
 matchs[24] = {"episodio":1, "girone":4, "nome":"battaglia-finale-episodio-2-gruppo-4", "daCaricare":true, "stampaPosizione" : 0};
@@ -27,10 +27,10 @@ matchs[52] = {"episodio":1, "girone":2, "nome":"battaglia-finale-episodio-5-grup
 matchs[53] = {"episodio":1, "girone":3, "nome":"battaglia-finale-episodio-5-gruppo-3", "daCaricare":true, "stampaPosizione" : 0};
 matchs[54] = {"episodio":1, "girone":4, "nome":"battaglia-finale-episodio-5-gruppo-4", "daCaricare":true, "stampaPosizione" : 0};
 matchs[55] = {"episodio":1, "girone":5, "nome":"battaglia-finale-episodio-5-gruppo-5", "daCaricare":true, "stampaPosizione" : 0};
-*/
+
 
 //https://api.chess.com/pub/tournament/il-carosello-1deg-turno-girone-1/1/1
-//https://api.chess.com/pub/tournament/battaglia-finale-episodio-1-gruppo-1/1/1
+//https://api.chess.com/pub/tournament/battaglia-finale-episodio-5-gruppo-1/1/1
 //https://www.chess.com/tournament/battaglia-finale-episodio-1-gruppo-5
 
 function elabora() {
@@ -76,7 +76,6 @@ function caricaMatch(url)
             }
         }
 
-//--???????? carosello togliere da classifica finale bannati
         matchs[iMatch].daCaricare = false;
         //Se ho caricato tutti i dati calcolo la classifica
         for (var i in matchs) {
@@ -101,17 +100,17 @@ function caricaMatch(url)
             if (matchs[i].url == this.url)
                 index = i;
         };
-        if (! jqXhr.responseJSON)
+        if (! jqXhr.responseJSON && jqXhr.responseJSON.indexOf('not found') == 0)
         {
             console.log('ERRORE ricarico dati: ' + this.url);
-                caricaMatch(index, this.url);    
-            } else {
-                console.log('ERRORE Match non valida. ' + this.url);
-                console.log('ERRORE Match non valida. ' + this.url);
-                console.log('ERRORE Match non valida. ' + this.url);
-                console.log('ERRORE Match non valida. ' + this.url);
-                //non lo devo più caricare
-                matchs[index].daCaricare = false;            }
+            caricaMatch(index, this.url);    
+        } else {
+            console.log('ERRORE Match non valida. ' + this.url);
+            console.log('ERRORE Match non valida. ' + this.url);
+            console.log('ERRORE Match non valida. ' + this.url);
+            console.log('ERRORE Match non valida. ' + this.url);
+            //non lo devo più caricare
+            matchs[index].daCaricare = false;            }
               
         });
 }
