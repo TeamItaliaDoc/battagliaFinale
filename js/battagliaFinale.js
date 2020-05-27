@@ -103,7 +103,7 @@ function caricaMatch(url)
         if (! jqXhr.responseJSON && jqXhr.responseJSON.indexOf('not found') == 0)
         {
             console.log('ERRORE ricarico dati: ' + this.url);
-            caricaMatch(index, this.url);    
+            caricaMatch(this.url);    
         } else {
             console.log('ERRORE Match non valida. ' + this.url);
             console.log('ERRORE Match non valida. ' + this.url);
