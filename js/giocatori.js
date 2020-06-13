@@ -29,6 +29,11 @@ function getAvatarUrl(url)
 
         //Se è bannato lo considero già stampato
         if (dataAvatar.status == 'closed:fair_play_violations') {
+            console.log('-------------------------------   BANNATO  ----------------------');
+            console.log('-------------------------------   BANNATO  ----------------------');
+            console.log('------------------------------- ' +    dataAvatar.username);
+            console.log('-------------------------------   BANNATO  ----------------------');
+            console.log('-------------------------------   BANNATO  ----------------------');
             giocatori[dataAvatar.username].posizione = 999;
         }
 

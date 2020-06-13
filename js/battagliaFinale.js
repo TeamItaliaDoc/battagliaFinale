@@ -7,27 +7,27 @@ matchs[12] = {"episodio":1, "girone":2, "nome":"battaglia-finale-episodio-1-grup
 matchs[13] = {"episodio":1, "girone":3, "nome":"battaglia-finale-episodio-1-gruppo-3", "daCaricare":true, "stampaPosizione" : 0};
 matchs[14] = {"episodio":1, "girone":4, "nome":"battaglia-finale-episodio-1-gruppo-4", "daCaricare":true, "stampaPosizione" : 0};
 matchs[15] = {"episodio":1, "girone":5, "nome":"battaglia-finale-episodio-1-gruppo-5", "daCaricare":true, "stampaPosizione" : 0};
-/*matchs[21] = {"episodio":1, "girone":1, "nome":"battaglia-finale-episodio-2-gruppo-1", "daCaricare":true, "stampaPosizione" : 0};
-matchs[22] = {"episodio":1, "girone":2, "nome":"battaglia-finale-episodio-2-gruppo-2", "daCaricare":true, "stampaPosizione" : 0};
-matchs[23] = {"episodio":1, "girone":3, "nome":"battaglia-finale-episodio-2-gruppo-3", "daCaricare":true, "stampaPosizione" : 0};
-matchs[24] = {"episodio":1, "girone":4, "nome":"battaglia-finale-episodio-2-gruppo-4", "daCaricare":true, "stampaPosizione" : 0};
-matchs[25] = {"episodio":1, "girone":5, "nome":"battaglia-finale-episodio-2-gruppo-5", "daCaricare":true, "stampaPosizione" : 0};
-matchs[31] = {"episodio":1, "girone":1, "nome":"battaglia-finale-episodio-3-gruppo-1", "daCaricare":true, "stampaPosizione" : 0};
-matchs[32] = {"episodio":1, "girone":2, "nome":"battaglia-finale-episodio-3-gruppo-2", "daCaricare":true, "stampaPosizione" : 0};
-matchs[33] = {"episodio":1, "girone":3, "nome":"battaglia-finale-episodio-3-gruppo-3", "daCaricare":true, "stampaPosizione" : 0};
-matchs[34] = {"episodio":1, "girone":4, "nome":"battaglia-finale-episodio-3-gruppo-4", "daCaricare":true, "stampaPosizione" : 0};
-matchs[35] = {"episodio":1, "girone":5, "nome":"battaglia-finale-episodio-3-gruppo-5", "daCaricare":true, "stampaPosizione" : 0};
-matchs[41] = {"episodio":1, "girone":1, "nome":"battaglia-finale-episodio-4-gruppo-1", "daCaricare":true, "stampaPosizione" : 0};
-matchs[42] = {"episodio":1, "girone":2, "nome":"battaglia-finale-episodio-4-gruppo-2", "daCaricare":true, "stampaPosizione" : 0};
-matchs[43] = {"episodio":1, "girone":3, "nome":"battaglia-finale-episodio-4-gruppo-3", "daCaricare":true, "stampaPosizione" : 0};
-matchs[44] = {"episodio":1, "girone":4, "nome":"battaglia-finale-episodio-4-gruppo-4", "daCaricare":true, "stampaPosizione" : 0};
-matchs[45] = {"episodio":1, "girone":5, "nome":"battaglia-finale-episodio-4-gruppo-5", "daCaricare":true, "stampaPosizione" : 0};
-matchs[51] = {"episodio":1, "girone":1, "nome":"battaglia-finale-episodio-5-gruppo-1", "daCaricare":true, "stampaPosizione" : 0};
-matchs[52] = {"episodio":1, "girone":2, "nome":"battaglia-finale-episodio-5-gruppo-2", "daCaricare":true, "stampaPosizione" : 0};
-matchs[53] = {"episodio":1, "girone":3, "nome":"battaglia-finale-episodio-5-gruppo-3", "daCaricare":true, "stampaPosizione" : 0};
-matchs[54] = {"episodio":1, "girone":4, "nome":"battaglia-finale-episodio-5-gruppo-4", "daCaricare":true, "stampaPosizione" : 0};
-matchs[55] = {"episodio":1, "girone":5, "nome":"battaglia-finale-episodio-5-gruppo-5", "daCaricare":true, "stampaPosizione" : 0};
-**/
+matchs[21] = {"episodio":2, "girone":1, "nome":"battaglia-finale-episodio-2-gruppo-1", "daCaricare":true, "stampaPosizione" : 0};
+matchs[22] = {"episodio":2, "girone":2, "nome":"battaglia-finale-episodio-2-gruppo-2", "daCaricare":true, "stampaPosizione" : 0};
+matchs[23] = {"episodio":2, "girone":3, "nome":"battaglia-finale-episodio-2-gruppo-3", "daCaricare":true, "stampaPosizione" : 0};
+matchs[24] = {"episodio":2, "girone":4, "nome":"battaglia-finale-episodio-2-gruppo-4", "daCaricare":true, "stampaPosizione" : 0};
+matchs[25] = {"episodio":2, "girone":5, "nome":"battaglia-finale-episodio-2-gruppo-5", "daCaricare":true, "stampaPosizione" : 0};
+matchs[31] = {"episodio":3, "girone":1, "nome":"battaglia-finale-episodio-3-gruppo-1", "daCaricare":true, "stampaPosizione" : 0};
+matchs[32] = {"episodio":3, "girone":2, "nome":"battaglia-finale-episodio-3-gruppo-2", "daCaricare":true, "stampaPosizione" : 0};
+matchs[33] = {"episodio":3, "girone":3, "nome":"battaglia-finale-episodio-3-gruppo-3", "daCaricare":true, "stampaPosizione" : 0};
+matchs[34] = {"episodio":3, "girone":4, "nome":"battaglia-finale-episodio-3-gruppo-4", "daCaricare":true, "stampaPosizione" : 0};
+matchs[35] = {"episodio":3, "girone":5, "nome":"battaglia-finale-episodio-3-gruppo-5", "daCaricare":true, "stampaPosizione" : 0};
+matchs[41] = {"episodio":4, "girone":1, "nome":"battaglia-finale-episodio-4-gruppo-1", "daCaricare":true, "stampaPosizione" : 0};
+matchs[42] = {"episodio":4, "girone":2, "nome":"battaglia-finale-episodio-4-gruppo-2", "daCaricare":true, "stampaPosizione" : 0};
+matchs[43] = {"episodio":4, "girone":3, "nome":"battaglia-finale-episodio-4-gruppo-3", "daCaricare":true, "stampaPosizione" : 0};
+matchs[44] = {"episodio":4, "girone":4, "nome":"battaglia-finale-episodio-4-gruppo-4", "daCaricare":true, "stampaPosizione" : 0};
+matchs[45] = {"episodio":4, "girone":5, "nome":"battaglia-finale-episodio-4-gruppo-5", "daCaricare":true, "stampaPosizione" : 0};
+matchs[51] = {"episodio":5, "girone":1, "nome":"battaglia-finale-episodio-5-gruppo-1", "daCaricare":true, "stampaPosizione" : 0};
+matchs[52] = {"episodio":5, "girone":2, "nome":"battaglia-finale-episodio-5-gruppo-2", "daCaricare":true, "stampaPosizione" : 0};
+matchs[53] = {"episodio":5, "girone":3, "nome":"battaglia-finale-episodio-5-gruppo-3", "daCaricare":true, "stampaPosizione" : 0};
+matchs[54] = {"episodio":5, "girone":4, "nome":"battaglia-finale-episodio-5-gruppo-4", "daCaricare":true, "stampaPosizione" : 0};
+matchs[55] = {"episodio":5, "girone":5, "nome":"battaglia-finale-episodio-5-gruppo-5", "daCaricare":true, "stampaPosizione" : 0};
+/**/
 
 //https://api.chess.com/pub/tournament/il-carosello-1deg-turno-girone-1/1/1
 //https://api.chess.com/pub/tournament/battaglia-finale-episodio-5-gruppo-1/1/1
@@ -61,7 +61,7 @@ function caricaMatch(url)
                 creaGiocatore(username);
             }
             //aggiungo il match tra i gironi giocati
-            giocatori[username].gironi[matchs[iMatch].episodio] = '<a href="' + matchs[iMatch].chessUrl + '" target=”_blank”> ' + matchs[iMatch].episodio + '/' + matchs[iMatch].girone + '</a> ' 
+            giocatori[username].gironi[matchs[iMatch].episodio] += '<a href="' + matchs[iMatch].chessUrl + '/pairings" target=”_blank”> ' + matchs[iMatch].episodio + '/' + matchs[iMatch].girone + '</a> ' 
             
             matchs[iMatch].girone;
         }
@@ -89,18 +89,19 @@ function caricaMatch(url)
             return;  
         calcolaClassificaRun = true;
 
-    //Ricerco elo e stampo classifica torneo / giocatori
-    getAvatar();
+        //Ricerco elo e stampo classifica torneo / giocatori
+        getAvatar();
     
     }).error(function(jqXhr, textStatus, error) {
         //è andato in errore ricarico i dati
         //Se responseJSON non è valorizzato solo se il record esiste    
+        console.log(this.url + ' Errore in caricamento');
         var index = 0;
         for (var i in matchs) {
             if (matchs[i].url == this.url)
                 index = i;
         };
-        if (! jqXhr.responseJSON && jqXhr.responseJSON.indexOf('not found') == 0)
+        if (! jqXhr.responseJSON)
         {
             console.log('ERRORE ricarico dati: ' + this.url);
             caricaMatch(this.url);    
@@ -110,7 +111,24 @@ function caricaMatch(url)
             console.log('ERRORE Match non valida. ' + this.url);
             console.log('ERRORE Match non valida. ' + this.url);
             //non lo devo più caricare
-            matchs[index].daCaricare = false;            }
+            matchs[index].daCaricare = false;           
+
+            //Se ho caricato tutti i dati calcolo la classifica
+            for (var i in matchs) {
+                if (matchs[i].daCaricare) {
+                    return;
+                }
+            }
+            
+            //controllo di non aver già lanciato fase sucessiva
+            if (calcolaClassificaRun)
+                return;  
+            calcolaClassificaRun = true;
+    
+            //Ricerco elo e stampo classifica torneo / giocatori
+            getAvatar();
+        
+            }
               
         });
 }
