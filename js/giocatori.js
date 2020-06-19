@@ -97,7 +97,9 @@ function getEloUrl(url)
             calcolaClassificaGiocatoriRun = true;
 
         //Calcolo clasifica
-        calcolaClassificaGiocatori();
+        //Calcolo prima classifica dei gironi
+        //calcolaClassificaGiocatori();
+        setPuntiClassifica();
 
     }).error(function(jqXhr, textStatus, error) {
         //è andato in errore ricarico i dati

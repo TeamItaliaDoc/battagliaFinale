@@ -30,7 +30,7 @@ matchs[55] = {"episodio":5, "girone":5, "nome":"battaglia-finale-episodio-5-grup
 /**/
 
 //https://api.chess.com/pub/tournament/il-carosello-1deg-turno-girone-1/1/1
-//https://api.chess.com/pub/tournament/battaglia-finale-episodio-5-gruppo-1/1/1
+//https://api.chess.com/pub/tournament/"battaglia-finale-episodio-1-gruppo-1/1/1
 //https://www.chess.com/tournament/battaglia-finale-episodio-1-gruppo-5
 
 function elabora() {
@@ -66,16 +66,10 @@ function caricaMatch(url)
             matchs[iMatch].girone;
         }
 
-        //Carico i risultati delle partite
-        for (var i in data.games) {
+        //Salvo i dati del match, i risultati devono essere elaborati dopo getAvatar per togliere eventuali bannati
+        matchs[iMatch].data = data;
 
-            //aggiorno punteggi
-            if (data.games[i].white.username) {
-                setPunti(data.games[i].white.username.toLowerCase(), data.games[i].white.result, data.games[i].black.username);
-                setPunti(data.games[i].black.username.toLowerCase(), data.games[i].black.result, data.games[i].white.username);
-            }
-        }
-
+        //Caricamento completato
         matchs[iMatch].daCaricare = false;
         //Se ho caricato tutti i dati calcolo la classifica
         for (var i in matchs) {
@@ -133,6 +127,37 @@ function caricaMatch(url)
         });
 }
 
+function setPuntiClassifica() 
+{
+    //Per tutti i match
+    for (var iMatch in matchs) 
+    {
+        //Se girone non ancora giocato, continuo
+        if (! matchs[iMatch].data)
+           continue;
+           
+        //Carico i risultati delle partite
+        for (var i in matchs[iMatch].data.games) {
+            if (matchs[iMatch].data.games[i].white.username && matchs[iMatch].data.games[i].black.username)
+            {
+                console.log('iMatch: ' + iMatch +  ' i: ' + i)
+                console.log(matchs[iMatch].data.games[i].white.username);
+                console.log(matchs[iMatch].data.games[i].black.username);
+                    //Non cosidero se uno dei giocatori è stato bannato
+                if (giocatori[matchs[iMatch].data.games[i].white.username.toLowerCase()].posizione < 999 && giocatori[matchs[iMatch].data.games[i].black.username.toLowerCase()].posizione < 999)
+                {
+                    //aggiorno punteggi
+                    if (matchs[iMatch].data.games[i].white.username) {
+                        setPunti(matchs[iMatch].data.games[i].white.username.toLowerCase(), matchs[iMatch].data.games[i].white.result, matchs[iMatch].data.games[i].black.username);
+                        setPunti(matchs[iMatch].data.games[i].black.username.toLowerCase(), matchs[iMatch].data.games[i].black.result, matchs[iMatch].data.games[i].white.username);
+                    }
+                }
+            }
+        }
+    }
 
+    //Punti caricati, carico classifica giocatori
+    calcolaClassificaGiocatori();
+}
 
 
