@@ -60,10 +60,13 @@ function caricaMatch(url)
             if (! giocatori[username]) {
                 creaGiocatore(username);
             }
-            //aggiungo il match tra i gironi giocati
-            giocatori[username].gironi[matchs[iMatch].episodio] += '<a href="' + matchs[iMatch].chessUrl + '/pairings" target=”_blank”> ' + matchs[iMatch].episodio + '/' + matchs[iMatch].girone + '</a> ' 
-            
-            matchs[iMatch].girone;
+
+            //Tolgo Dirk perchè ha giocato in due gironi
+            if (username != 'dirkflasche' || iMatch != 24)
+            {
+                //aggiungo il match tra i gironi giocati
+                giocatori[username].gironi[matchs[iMatch].episodio] += '<a href="' + matchs[iMatch].chessUrl + '/pairings" target=”_blank”> ' + matchs[iMatch].episodio + '/' + matchs[iMatch].girone + '</a> ';
+            }
         }
 
         //Salvo i dati del match, i risultati devono essere elaborati dopo getAvatar per togliere eventuali bannati
@@ -148,8 +151,10 @@ function setPuntiClassifica()
                 {
                     //aggiorno punteggi
                     if (matchs[iMatch].data.games[i].white.username) {
-                        setPunti(matchs[iMatch].data.games[i].white.username.toLowerCase(), matchs[iMatch].data.games[i].white.result, matchs[iMatch].data.games[i].black.username);
-                        setPunti(matchs[iMatch].data.games[i].black.username.toLowerCase(), matchs[iMatch].data.games[i].black.result, matchs[iMatch].data.games[i].white.username);
+                        if (matchs[iMatch].data.games[i].white.username.toLowerCase() != 'dirkflasche' || iMatch != 24)
+                            setPunti(matchs[iMatch].data.games[i].white.username.toLowerCase(), matchs[iMatch].data.games[i].white.result, matchs[iMatch].data.games[i].black.username);
+                        if (matchs[iMatch].data.games[i].black.username.toLowerCase() != 'dirkflasche' || iMatch != 24)
+                            setPunti(matchs[iMatch].data.games[i].black.username.toLowerCase(), matchs[iMatch].data.games[i].black.result, matchs[iMatch].data.games[i].white.username);
                     }
                 }
             }
