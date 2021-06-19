@@ -24,6 +24,7 @@ matchs[44] = {"episodio":4, "girone":4, "nome":"battaglia-finale-episodio-4-grup
 matchs[45] = {"episodio":4, "girone":5, "nome":"battaglia-finale-episodio-4-gruppo-5", "daCaricare":true, "stampaPosizione" : 0};
 matchs[51] = {"episodio":5, "girone":1, "nome":"battaglia-finale-episodio-5-gruppo-1", "daCaricare":true, "stampaPosizione" : 0};
 matchs[52] = {"episodio":5, "girone":2, "nome":"battaglia-finale-episodio-5-gruppo-2", "daCaricare":true, "stampaPosizione" : 0};
+/*
 matchs[53] = {"episodio":5, "girone":3, "nome":"battaglia-finale-episodio-5-gruppo-3", "daCaricare":true, "stampaPosizione" : 0};
 matchs[54] = {"episodio":5, "girone":4, "nome":"battaglia-finale-episodio-5-gruppo-4", "daCaricare":true, "stampaPosizione" : 0};
 matchs[55] = {"episodio":5, "girone":5, "nome":"battaglia-finale-episodio-5-gruppo-5", "daCaricare":true, "stampaPosizione" : 0};
@@ -64,6 +65,10 @@ function caricaMatch(url)
             //Tolgo Dirk perchè ha giocato in due gironi
             if (username != 'dirkflasche' || iMatch != 24)
             {
+                //Per il torneo 5.1 episodio contine undefined. Lo tolgo
+                if (giocatori[username].gironi[matchs[iMatch].episodio] == undefined) {
+                    giocatori[username].gironi[matchs[iMatch].episodio] = '';
+                }
                 //aggiungo il match tra i gironi giocati
                 giocatori[username].gironi[matchs[iMatch].episodio] += '<a href="' + matchs[iMatch].chessUrl + '/pairings" target=”_blank”> ' + matchs[iMatch].episodio + '/' + matchs[iMatch].girone + '</a> ';
             }
